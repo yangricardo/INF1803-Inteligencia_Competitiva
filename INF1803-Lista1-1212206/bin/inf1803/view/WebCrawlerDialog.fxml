@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="115.0" maxWidth="292.0" minHeight="91.0" minWidth="200.0" prefHeight="91.0" prefWidth="292.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inf1803.view.WebCrawlerDialogController">
+   <children>
+      <GridPane layoutX="-133.0" layoutY="-103.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="107.0" text="URL" />
+            <Label prefHeight="17.0" prefWidth="158.0" text="Max Pages" GridPane.rowIndex="1" />
+            <TextField fx:id="urlText" prefHeight="25.0" prefWidth="108.0" GridPane.columnIndex="1" />
+            <TextField fx:id="maxPages" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutY="89.0" mnemonicParsing="false" onAction="#handleExecuteWebCrawler" prefHeight="25.0" prefWidth="292.0" text="Execute Web Crawler" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="65.0" />
+   </children>
+</AnchorPane>
